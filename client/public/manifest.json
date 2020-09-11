@@ -1,0 +1,23 @@
+{
+  "short_name": "TSF...",
+  "name": "Total So Far...",
+  "icons": [
+    {
+      "src": "logo.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "lang": "en-uk",
+  "display": "standalone",
+  "theme_color": "#00017D",
+  "background_color": "#ffffff",
+  "related_applications": "false"
+}

@@ -1,0 +1,43 @@
+body {
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+
+  color: $blue;
+  font-size: 12pt;
+
+  h1 {
+    font-size: 2em;
+  }
+  h1.superBig {
+    font-size: 4em;
+  }
+  h2{
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+  h5 {
+    font-size: 1em;
+  }
+  h6 {
+    font-size: 0.75em;
+  }
+
+  .section {
+    margin: 10px 0 10px 0;
+  }
+
+  .inFocus {
+    box-shadow: 0px 0px 20px 20px $grey-light;
+  }
+
+  input {
+    width: 100%;
+    margin: 5px 0 5px 0;
+  }
+}

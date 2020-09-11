@@ -1,0 +1,52 @@
+.App {
+  .btn-primary {
+    background-color: $blue !important;
+    color: white !important;
+    border: $blue !important;
+  }
+  .btn-secondary {
+    color: white !important;
+    background-color: $confirm !important;
+    border: $confirm !important;
+  }
+  .btn-success {
+    color: $white !important;
+    background-color: $good !important;
+    border: $good-light !important;
+    &.notSelected {
+      background-color: $good-light !important;
+    }
+    &.selected {
+      transform: scale(1.1);
+    }
+  }
+  .btn-warning {
+    color: $white !important;
+    background-color: $meh !important;
+    border: $meh-light !important;
+    &.notSelected {
+      background-color: $meh-light !important;
+    }
+    &.selected {
+      transform: scale(1.1);
+    }
+  }
+  .btn-danger {
+    color: $white !important;
+    background-color: $bad !important;
+    border: $bad-light !important;
+    &.notSelected {
+      background-color: $bad-light !important;
+    }
+    &.selected {
+      transform: scale(1.1);
+    }
+  }
+  .btn-group {
+    .btn-dark {
+      color: black !important;
+      background-color: $grey-light !important;
+      border: $grey-light !important;
+    }
+  }
+}

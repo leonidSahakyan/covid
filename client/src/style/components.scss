@@ -1,0 +1,360 @@
+
+.App {
+
+  .navBar {
+
+    a {
+      color: $blue;
+    }
+
+    table {
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .header {
+    .title {
+      h1 {
+
+      }
+    }
+    .col-4 {
+      padding: 0;
+    }
+    color: white;
+    a {
+      color: white;
+    }
+    .dead {
+      color: $grey;
+    }
+    .confirmed {
+      color: $bad;
+    }
+    .recovered {
+      color: $good;
+    }
+    .profileImageContainer {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .profileImage {
+      width: 100%;
+    }
+    svg {
+      margin-top: 20px;
+    }
+  }
+
+  .landingArea {
+    .landing-container {
+      margin-top: 20px;
+    }
+    .title {
+      svg {
+        margin-bottom: -4px;
+        color: red;
+        font-size: 1.3em;
+      }
+      .positive {
+        svg {
+          color: green;
+        }
+      }
+    }
+    .stepTwo {
+      svg {
+        font-size: 2.5em;
+        margin: 10px 0 10px 0;
+      }
+    }
+  }
+
+  .updateStatus {
+    .colour-button {
+      padding: 10px;
+      width: 100%;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      &.positive {
+        background-color: red;
+        background-image: linear-gradient(red, coral);
+      }   
+      &.symptomatic {
+        background-color: yellow;
+        background-image: linear-gradient(yellow,lightyellow);
+      }
+      &.negative {
+        background-color: green;
+        background-image: linear-gradient(green,lightgreen);
+      }
+    }
+    /* Portrait mobile devices */
+    @include media-breakpoint-down(sm) { 
+      position: fixed;
+      bottom: 10px;
+      left: 0px;
+      width: 100%;
+      z-index: 1; 
+      .colour-button {
+        background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+        position: relative;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background: white;
+        z-index: 9999999999999999999999999999;
+      }
+    }
+    .modal {
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  .infoArea {
+    margin: 30px 0 30px 0;
+  }
+
+  .banner {
+    color: white;
+    background-color: $blue;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .footer {
+    margin-bottom: 20px;
+    img {
+      max-height: 25px;
+    }
+
+    button {
+      width: 100%;
+    }
+
+    a {
+      color: white;
+    }
+
+    .tiny-text{
+      font-size: 0.5em;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 100px;
+    }
+  }
+
+  .about {
+    .backButton {
+      position: absolute;
+    }
+  }
+
+  .authenticationForm {
+    overflow-y: auto;
+    margin: 0 auto;
+    display: block;
+    max-width: 425px;
+
+    img.loginButton {
+      width: 100%;
+      margin: 10px 0px 10px 0px;
+    }
+
+    button, input {
+      width: 100%;
+      margin: 5px 0 5px 0;
+    }
+
+  }
+
+  .waitingModal {
+    position: fixed;
+    display: table;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    opacity: 80%;
+
+    .inner {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+  }
+
+  .connectModal {
+    .sharingButtons{
+      button {
+        width: auto;
+      }
+    }
+    button {
+      width: 100%;
+    }
+    svg {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  .profileCard {
+    width: 100%;
+    margin-top: 5px;
+
+    button {
+      width: 100%;
+      height: 100%;
+    }
+
+    .profilePicutre {
+      height: 50px;
+      width: 50px;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+  }
+
+  .gdprConsentForm {
+    max-width: 425px;
+    margin: 0 auto;
+    .title {
+      text-align: center;
+      width: 100%
+    }
+    .smallprint {
+
+    }
+    button {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .notificationsModal {
+    .modal {
+      .modal-body {
+        padding: 0;
+      }
+    }
+    .notification {
+      padding: 10px;
+      background: linear-gradient(to bottom, #ffffff 0%,#eeeeee 100%);
+    }
+  }
+
+  .shareApp {
+    button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    svg {
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+    video {
+      width: 100%;
+    }
+  }
+
+  .mobileMenu-container {
+    position: absolute;
+    background-color: none;
+    top: 40px;
+    right: 0px;
+    z-index: 100;
+    width: 100%;
+    .menu {
+      margin-top: 10px;
+      float: right;
+      width: 100%;
+      max-width: 425px;
+    }
+    .menuItem {
+      background-color: white;
+      padding: 5px;
+      font-size: 1.5em;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    &.fixed {
+      position: fixed;
+      top: 0px;
+    }
+  }
+
+  .menuBackground {
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .settings{
+    input {
+      width: 100%;
+    }
+    .dob {
+      
+    }
+  }
+
+  .contactForm {
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    textarea {
+      width: 100%;
+    }
+  }
+
+  .homeScreenInstallBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: $blue;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: -10px;
+    z-index: 100;
+    border: white 2px solid;
+    color: white;
+    font-size: 10px;
+    img {
+      width: 20px;
+      background-color: white;
+      border-radius: 5px;
+      margin: 5px;
+    }
+  }
+
+  .installModalContent {
+    img {
+      display: block;
+      width: 100px;
+      margin: 0 auto;
+    }
+  }
+}
